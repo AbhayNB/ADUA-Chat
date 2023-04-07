@@ -56,7 +56,7 @@ app=Flask(__name__)
 @app.route('/',methods=['GET','POST'])
 def home():
     if request.method=='POST':
-        openai.api_key = "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"
+        openai.api_key = "---your openai api key here"
         query= request.form['book']
         query=query.lower()
         if 'open' and 'youtube' in query:
